@@ -1,0 +1,65 @@
+.row{
+	text-align: center;
+}
+
+.players{
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+	float: left;
+	width: 160px;
+	height: 180px;
+	margin-right: 20px;
+	background-color: #99E5FF;
+}
+
+.myEnemy{
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+	float: left;
+	width: 160px;
+	height: 180px;
+	margin-right: 20px;
+	background-color: #99E5FF;
+}
+
+#playerStart{
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#playerSet{
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.enemySet{
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.enemySet2{
+	width: 540px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#yourEnemy{
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span{
+	font-size: 20px;
+	
+}
+
+#button{
+	clear: both;
+	padding-top: 20px;
+}

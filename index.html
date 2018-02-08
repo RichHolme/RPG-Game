@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RPG-Game</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Bootstrap File -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<!-- javascript -->
+  	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+	
+	<!-- page title -->
+	<div class="row">
+		<h1>RPG-Game</h1>
+	</div>
+	
+	<!-- player list -->
+	<div id="playerList" class="row">
+		<h2>Players</h2>
+		<div id="playerStart">
+			<div id="player1" class="players">
+				<img id="mufasa" src="assets/images/mufasa.jpg" height="150px" width="150px"/>
+				<span id="mufasaPoints">#250</span>
+			</div>
+			<div id="player2" class="players">
+				<img id="scar" src="assets/images/scar.jpg" height="150px" width="150px"/>
+				<span id="scarPoints">#230</span>
+			</div>
+			<div id="player3" class="players">
+				<img id="simba" src="assets/images/simba.jpg" height="150px" width="150px"/>
+				<span id="simbaPoints">#150</span>
+			</div>
+			<div id="player4" class="players">
+				<img id="timone" src="assets/images/timone.jpg" height="150px" width="150px"/>
+				<span id="timonePoints">#50</span>
+			</div>
+			<div id="player5" class="players">
+				<img id="pumbaa" src="assets/images/pumbaa.jpg" height="150px" width="150px"/>
+				<span id="pumbaaPoints">#125</span>
+			</div>
+		</div>
+		
+
+	</div>
+
+	<!-- instructions -->
+	<div id ="instructions" class="row">
+		<h2>Instructions</h2>
+		<h3>Click a player to choose as defender</h3>
+		<h3>Click player in enemies to choose as your enemy</h3>
+		<h3>Click attack to stike your enemy</h3>
+	</div>
+
+	<!-- your player -->
+	<div class="row loadHide">
+		<h2>Your Player</h2>
+		<div id="playerSet">
+			<div id="defender"></div>
+		</div>
+		<div  id="button" class="row">
+			<button class="btn btn-primary">Attack</button>
+		</div>
+		
+	</div>
+
+	<!-- enemy list -->
+	<div class="row loadHide">
+		<h2>Enemies</h2>
+		<div class="enemySet">
+			<div id="enemies"></div>
+		</div>
+	</div>
+
+	<!-- your enemy -->
+	<div class="row loadHide">
+		<h2>Your Enemy</h2>
+		<div id="yourEnemy">
+			<div id="enemy"></div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

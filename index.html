@@ -11,37 +11,39 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   	<!-- javascript -->
   	<script type="text/javascript" src="assets/javascript/game.js"></script>
+  	<!-- google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Overlock+SC|Roboto+Mono" rel="stylesheet">
 </head>
 <body>
 	
 	<!-- page title -->
 	<div class="row">
-		<h1>RPG-Game</h1>
+		<h1>Who's The King of The Jungle?</h1>
 	</div>
 	
 	<!-- player list -->
 	<div id="playerList" class="row">
 		<h2>Players</h2>
 		<div id="playerStart">
-			<div id="player1" class="players">
-				<img id="mufasa" src="assets/images/mufasa.jpg" height="150px" width="150px"/>
-				<span id="mufasaPoints">#250</span>
+			<div id="player1" class="players" value="250">
+				<img id="Mufasa" src="assets/images/mufasa.jpg" height="100px" width="100px"/>
+				<div id="mufasaPoints" class="points">250</div>
 			</div>
 			<div id="player2" class="players">
-				<img id="scar" src="assets/images/scar.jpg" height="150px" width="150px"/>
-				<span id="scarPoints">#230</span>
+				<img id="Scar" src="assets/images/scar.jpg" height="110px" width="110px"/>
+				<div id="scarPoints" class="points">230</div>
 			</div>
 			<div id="player3" class="players">
-				<img id="simba" src="assets/images/simba.jpg" height="150px" width="150px"/>
-				<span id="simbaPoints">#150</span>
+				<img id="Simba" src="assets/images/simba.jpg" height="110px" width="110px"/>
+				<div id="simbaPoints" class="points">150</div>
 			</div>
 			<div id="player4" class="players">
-				<img id="timone" src="assets/images/timone.jpg" height="150px" width="150px"/>
-				<span id="timonePoints">#50</span>
+				<img id="Timone" src="assets/images/timone.jpg" height="110px" width="110px"/>
+				<div id="timonePoints" class="points">100</div>
 			</div>
 			<div id="player5" class="players">
-				<img id="pumbaa" src="assets/images/pumbaa.jpg" height="150px" width="150px"/>
-				<span id="pumbaaPoints">#125</span>
+				<img id="Pumbaa" src="assets/images/pumbaa.jpg" height="110px" width="110px"/>
+				<div id="pumbaaPoints" class="points">125</div>
 			</div>
 		</div>
 		
@@ -51,23 +53,41 @@
 	<!-- instructions -->
 	<div id ="instructions" class="row">
 		<h2>Instructions</h2>
-		<h3>Click a player to choose as defender</h3>
-		<h3>Click player in enemies to choose as your enemy</h3>
-		<h3>Click attack to stike your enemy</h3>
+		<h3>Choose your character</h3>
+		<h3>Choose your enemy</h3>
+		<h3>Click attack to strike your enemy</h3>
 	</div>
 
 	<!-- your player -->
 	<div class="row loadHide">
-		<h2>Your Player</h2>
+		<h2>Your Player</h2> 
 		<div id="playerSet">
 			<div id="defender"></div>
 		</div>
 		<div  id="button" class="row">
-			<button class="btn btn-primary">Attack</button>
+			<button id="attck-btn" class="btn btn-primary">Attack</button>
 		</div>
-		
+		<div class="row loadHide">
+			<div id="attackText"></div>
+		</div>
+
 	</div>
 
+	<div class="row">
+		<div class="loose">
+			<h1>Not You!</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="winner">
+			<h1>You Are!</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<button id="replay" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span> Replay</button>
+	</div>
 	<!-- enemy list -->
 	<div class="row loadHide">
 		<h2>Enemies</h2>
@@ -80,6 +100,7 @@
 	<div class="row loadHide">
 		<h2>Your Enemy</h2>
 		<div id="yourEnemy">
+
 			<div id="enemy"></div>
 		</div>
 		

@@ -17,31 +17,52 @@ div > h3{
 }
 
 div > h1{
-	font-size: 60px;
-	margin-top: 5px;
+	font-size: 5vw;
+	margin-top: 4vh;
 }
 
 div > h2{
-	font-size: 35px;
+	font-size: 2vw;
 }
 
 .row{
 	text-align: center;
-	margin-top: -9px;
+	/*margin-top: -9px;*/
 }
 
 .players{
 	border: solid;
 	border-color: black;
 	border-width: 2px;
-	float: left;
+	float: right;
 	width: 120px;
 	height: 140px;
-	margin-right: 10px;
-	margin-left: 10px;
+	/*margin-right: 10px;*/
+	margin: 1vw;
 	background-color: #99E5FF;
 }
 
+.pSetOne,
+.pSetTwo{
+	/*float: right;*/
+	/*width: 100%;
+	margin-right: auto;
+	margin-left: auto;*/
+}
+
+.pSetThree{
+	/*float: left;*/
+}
+
+.pContainer{
+	/*width: 100%;
+	margin-right: auto;
+	margin-left: auto;*/
+}
+
+.col-md-4{
+	border: solid 4px black;
+}
 .myEnemy{
 	border: solid;
 	border-color: orange;
@@ -59,12 +80,6 @@ div > h2{
 	/*margin-right: 50px;*/
 	/*background-color: black;*/
 
-}
-
-#playerStart{
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 #playerSet{
@@ -128,4 +143,55 @@ button{
 .loose{
 	margin-top: 30px;
 	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1024px){	
+	
+	div > h1{
+		font-size: 8vw;
+		margin: 4vh;
+		margin-bottom: 1vh;
+	}
+
+	div > h2{
+		margin: 0vw;
+		font-size: 6vw;
+	}
+
+	div > h3{
+		font-size: 5.5vw;
+	}
+
+	.players{
+		margin-right: -8.5vw;
+		margin-left: 10vw;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 768px){	
+	
+	.players{
+		margin-right: 3.8vw;
+		margin-left: .1vw;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 376px){	
+	
+	.players{
+		margin-right: 11vw;
+		margin-left: 2vw;
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 320px){	
+	
+	.players{
+		margin-right: 8vw;
+		margin-left: 0vw;
+		float: right;
+	}
 }

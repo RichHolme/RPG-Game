@@ -27,6 +27,9 @@ $(document).ready(function() {
 		$("#defender").prepend( $("#" + this.id) );
 		// add to identify player
 		$("#" + this.id).addClass('defender')
+		// change defender size
+		$(".defender").animate({ height: "26vh", width: "12vw" });
+		$(".defender>img").animate({ height: "22vh", width: "10vw" });
 		// points of defender
 		defenderPoints = $(".defender").text();
 		// name of defender
@@ -49,6 +52,9 @@ $(document).ready(function() {
 		enemyPoints = $('.theEnemy').text();
 		// get enemy name
 		enemyName = $(".theEnemy").children('img').prop('id');
+		// change size of enemy
+		$(".theEnemy").animate({ height: "26vh", width: "12vw" });
+		$(".theEnemy>img").animate({ height: "22vh", width: "10vw" });
 		console.log(enemyName);
 		// center enemies
 		$(".enemySet").addClass('enemySet2').removeClass('enemySet');
@@ -76,6 +82,9 @@ $(document).ready(function() {
 			enemyPoints = $('.theEnemy').text();
 			// get enemy name
 			enemyName = $(".theEnemy").children('img').prop('id');
+			// change size of enemy
+			$(".theEnemy").animate({ height: "26vh", width: "12vw" });
+			$(".theEnemy>img").animate({ height: "22vh", width: "10vw" });
 			// remove enemy click
 			rmEnemyClick();
 			// enemyPointSet();

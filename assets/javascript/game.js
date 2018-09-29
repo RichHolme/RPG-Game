@@ -26,7 +26,8 @@ $(document).ready(function() {
 		// make movement
 		$("#defender").prepend( $("#" + this.id) );
 		// add to identify player
-		$("#" + this.id).addClass('defender')
+		$("#" + this.id).addClass('defender');
+		// $("#" + this.id).removeClass('players');
 		// change defender size
 		$(".defender").animate({ height: "26vh", width: "12vw" });
 		$(".defender>img").animate({ height: "22vh", width: "10vw" });
@@ -162,6 +163,13 @@ $(document).ready(function() {
 			$(".loadHide").hide(); 
 			$(".loose").show();
 			$("#replay").show();
+			// $(".loose").append("<img src='assets/images/mufasa.jpg'>");
+			var sadTrombone = new Audio("assets/images/Sad_Trombone.mp3");
+			var scarAaudio = new Audio("http://wavcentral.com/sounds/movies/lionking/lionkg01.mp3");
+			sadTrombone.play();
+			setTimeout(function(){
+				scarAaudio.play();
+			}, 4000);
 		}else{
 			$(".defender > div").text(defenderPoints);
 		}

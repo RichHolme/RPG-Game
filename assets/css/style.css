@@ -54,6 +54,11 @@ div > h2{
 	background-color: #99E5FF;
 }
 
+.defender{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
 .theEnemy{
 	border-color: red;
 	/*margin-right: 50px;*/
@@ -115,7 +120,7 @@ div > h2{
 
 #attackText{
 	color: white;
-	margin-top: 9vh;
+	margin-top: 11vh;
 	font-size: 1.8vw;
 	/*margin-top: 10px;*/
 	/*margin-bottom: 10px;*/

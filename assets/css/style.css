@@ -84,16 +84,16 @@ div > h2{
 }
 
 .enemySet{
-	/*width: 560px;
+	width: 570px;
 	margin-right: auto;
-	margin-left: auto;*/
+	margin-left: auto;
 	/*float: right;*/
 }
 
 .enemySet2{
-	/*width: 430px;
+	width: 430px;
 	margin-right: auto;
-	margin-left: auto;*/
+	margin-left: auto;
 	color: darkred;
 	/*float: right;*/
 }
@@ -251,7 +251,7 @@ button{
 
 	.myEnemy{
 		margin-right: 0vw !important;
-		margin-left: 11vw !important;
+		margin-left: 2.5vw !important;
 		margin-top: 2vh !important;
 		float: left;
 		width: 90px !important;
@@ -283,9 +283,22 @@ button{
 		width: 26vw !important;
 		margin-right: 4vw !important;
 	}
+
+	.enemySet{
+		width: 414px !important;
+	}
+
+	.enemySet2{
+		width: 314px !important;
+	}
 }
 
 @media only screen and (max-width: 376px){	
+
+	.players{
+		margin-right: 5vw !important;
+		margin-left: 2vw !important;
+	}
 	
 	.defender > img{
 		width: 22vw !important;
@@ -295,13 +308,29 @@ button{
 		width: 22vw !important;
 	}
 
+	.enemySet{
+		width: 376px !important;
+	}
+
+	.enemySet2{
+		width: 300px !important;
+	}
+
 }
 
 @media only screen and (max-width: 320px){	
 	
 	.players{
-		margin-right: 8vw;
+		margin-right: 2.5vw !important;
 		margin-left: 0vw;
 		float: right;
+	}
+
+	.enemySet{
+		width: 320px !important;
+	}
+
+	.enemySet2{
+		width: 300px !important;
 	}
 }

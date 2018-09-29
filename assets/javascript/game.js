@@ -21,6 +21,9 @@ $(document).ready(function() {
 	// name of enemy
 	var enemyName = '';
 
+	var slap = new Audio("assets/images/Slap.mp3");
+	var cheer = new Audio("assets/images/Cheer.mp3");
+
 	// selecting defender
 	$(".players").click(function(event){
 		// make movement
@@ -148,6 +151,7 @@ $(document).ready(function() {
 				$(".loadHide").hide(); 
 				$(".winner").show();
 				$("#replay").show();
+				cheer.play();
 			}
 
 		}else{
@@ -207,7 +211,9 @@ $(document).ready(function() {
 	}
 
 	// attack button
-	$('#attck-btn').on('click', function(){
+	$('#attck-btn').on('click',function(){
+		// playSlap();
+		console.log('called original function');
 		// sets defender increment
 		if(defenderName == 'Mufasa'){
 			p += 5;
@@ -220,6 +226,7 @@ $(document).ready(function() {
 		}else if(defenderName == 'Timone'){
 			p += 20;
 		}
+		// slap.play();
 		// text for attck info
 		$("#attackText").text('You attacked ' + $('.theEnemy').children('img').prop('id') + ' for ' + p + ' points').append('<br>');
 		$("#attackText").append($('img').prop('id') + ' was attacked for ' + Ep + ' points');
@@ -232,6 +239,21 @@ $(document).ready(function() {
 		
 
 	});
+
+	$(button).on('click',function(){
+		console.log("calling play slap");
+		playSlap();
+
+	});
+
+	function playSlap(){
+		console.log("called");
+		slap.play();
+		setTimeout(function(){
+			slap.pause();
+			slap.currentTime = 0;
+		}, 500)
+	}
 
 	$('#replay').on('click', function(){
 		location.reload();
